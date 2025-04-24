@@ -5,21 +5,21 @@
 class Squad < Formula
   desc "Squadbase CLI"
   homepage "https://github.com/squadbase/squadbase"
-  version "0.1.0-beta.10"
+  version "0.1.0-beta.11"
   license "Apache License 2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/squadbase/squadbase/releases/download/v0.1.0-beta.10/squad_0.1.0-Beta.10_darwin_x86_64.tar.gz"
-      sha256 "f139f7df94042d2395c753bbe05a35e82f2ba6a06a1cfbb0e96a628d51cd6b47"
+      url "https://github.com/squadbase/squadbase/releases/download/v0.1.0-beta.11/squad_0.1.0-Beta.11_darwin_x86_64.tar.gz"
+      sha256 "3e9a71cf847c4904039bb628fb41ece8414eef6f0d8ccfbab896e53a64fef9bf"
 
       def install
         bin.install "squad"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/squadbase/squadbase/releases/download/v0.1.0-beta.10/squad_0.1.0-Beta.10_darwin_arm64.tar.gz"
-      sha256 "50c5f1ecebf9c013f73c3ec4ce62da445d5a7d6cae29c53d1d51c07a583c6f24"
+      url "https://github.com/squadbase/squadbase/releases/download/v0.1.0-beta.11/squad_0.1.0-Beta.11_darwin_arm64.tar.gz"
+      sha256 "1a0a8e8e716ded2d292541a87aa660db7ea7f3536385aa14260149443bd4d8f5"
 
       def install
         bin.install "squad"
@@ -30,8 +30,8 @@ class Squad < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/squadbase/squadbase/releases/download/v0.1.0-beta.10/squad_0.1.0-Beta.10_linux_x86_64.tar.gz"
-        sha256 "25adc6cad6886c7496db577e0d29bda56f781c068590fce804cb72ae07d47216"
+        url "https://github.com/squadbase/squadbase/releases/download/v0.1.0-beta.11/squad_0.1.0-Beta.11_linux_x86_64.tar.gz"
+        sha256 "1ddb0e0c571741468e5f35807b0e8b6c81ba1feb1ad589048f6cb877d496af11"
 
         def install
           bin.install "squad"
@@ -40,8 +40,8 @@ class Squad < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/squadbase/squadbase/releases/download/v0.1.0-beta.10/squad_0.1.0-Beta.10_linux_arm64.tar.gz"
-        sha256 "d14399ec39c7593c97897f7c70a4208963fd3e25488af0194505d97f7dcfc6d2"
+        url "https://github.com/squadbase/squadbase/releases/download/v0.1.0-beta.11/squad_0.1.0-Beta.11_linux_arm64.tar.gz"
+        sha256 "7899e220f3a8fa959a3b48ad291de37381e8873edeb4778dac36789d12073caf"
 
         def install
           bin.install "squad"
