@@ -11,7 +11,7 @@ class Squad < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/squadbase/squadbase/releases/download/v0.1.0-beta.13/squad_0.1.0-Beta.13_darwin_x86_64.tar.gz"
-      sha256 "819c402824d55c954c594cd7e77b60cd5816a85e9c8ca9e8030f918c3fa89165"
+      sha256 "5ae7c532656af597892615dfbd78abcb011b96111e92240e0537cce1bd68ac31"
 
       def install
         bin.install "squad"
@@ -19,7 +19,7 @@ class Squad < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/squadbase/squadbase/releases/download/v0.1.0-beta.13/squad_0.1.0-Beta.13_darwin_arm64.tar.gz"
-      sha256 "e70f13a1f22b6225132db51f276007a46768239bd6d60fd6f847f646328ee2db"
+      sha256 "6cad7f97b2db24de045434a5998902277efacb04d9f414b2e848b9bc81ec117e"
 
       def install
         bin.install "squad"
@@ -31,7 +31,7 @@ class Squad < Formula
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
         url "https://github.com/squadbase/squadbase/releases/download/v0.1.0-beta.13/squad_0.1.0-Beta.13_linux_x86_64.tar.gz"
-        sha256 "6086d84aab5feedb017087c171f1001a96e19d73b26967df275af8b89da85440"
+        sha256 "a1d22715b404945c5d334d4c4c0d22479d22e33a33fa0571883420391b5dd391"
 
         def install
           bin.install "squad"
@@ -41,7 +41,7 @@ class Squad < Formula
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
         url "https://github.com/squadbase/squadbase/releases/download/v0.1.0-beta.13/squad_0.1.0-Beta.13_linux_arm64.tar.gz"
-        sha256 "a6c60b6b0d818a50315a86903c4b4de846181027cfb4f9d505c14ff92e38ad63"
+        sha256 "3d7c1cf758477f34c09e415c500182b5fb8c98c9fb4e2872adce67698d131114"
 
         def install
           bin.install "squad"
